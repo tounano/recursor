@@ -1,0 +1,41 @@
+{
+  "name": "recursor",
+  "version": "0.0.1",
+  "main": "./recursor.js",
+  "description": "Reliable cursor for MongoDB.",
+  "homepage": "https://github.com/tounano/recursor/",
+  "author": "ClickHere <js@clickhere.co.il>",
+  "keywords": [
+    "mongodb",
+    "mongo",
+    "mapreduce",
+    "incremental",
+    "cursor",
+    "messaging",
+    "pub/sub",
+    "cep",
+    "event",
+    "processing",
+    "etl"
+  ],
+  "licenses": {
+    "type": "The MIT License",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tounano/recursor"
+  },
+  "engines": {
+    "node": ">=0.6.11 <=0.7.0 || >=0.7.3"
+  },
+  "dependencies": {
+    "underscore": "latest",
+    "srough": "latest",
+    "async": "latest"
+  },
+  "devDependencies": {
+    "tingodb": "latest",
+    "through": "latest"
+  }
+}
