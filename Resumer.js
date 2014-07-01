@@ -62,7 +62,14 @@ function streamReplacer(originalStream, repository, uniqueIndex) {
       }.bind(this));
     });
 
-    originalStream().pipe(stream);
+    var pt = srough();
+
+    stream._readableState.highWaterMark = 1;
+    stream._writableState.highWaterMark = 1;
+    pt._readableState.highWaterMark = 1;
+    pt._writableState.highWaterMark = 1;
+
+    originalStream().pipe(pt).pipe(stream);
 
     return stream;
   }

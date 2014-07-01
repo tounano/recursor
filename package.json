@@ -1,6 +1,6 @@
 {
   "name": "recursor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./recursor.js",
   "description": "Reliable cursor for MongoDB.",
   "homepage": "https://github.com/tounano/recursor/",
